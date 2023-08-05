@@ -49,3 +49,8 @@ a {
 img {
   max-width: 100%;
 }
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--off-white);
+}
