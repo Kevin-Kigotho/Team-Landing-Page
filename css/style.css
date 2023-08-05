@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --dark-blue: hsl(240, 29%, 19%);
+  --soft-blue: hsl(232, 75%, 62%);
+  --desaturated-blue: hsl(240, 28%, 58%);
+  --soft-violet: hsl(278, 59%, 74%);
+  --light-orange: hsl(29, 100%, 74%);
+  --off-white: hsl(0, 0%, 96%);
+
+  --color-light-text: var(--off-white);
+  --color-dark-text-heading: hsla(240, 30%, 19%, 0.9);
+  --color-dark-text-paragraph: var(--dark-blue);
+  --color-link: hsl(232, 75%, 62%);
+  --color-link-hover: hsl(232, 51%, 53%);
+
+  --fs-h1: 3.125rem; /*50px*/
+  --fs-h1-mobile: 2rem; /*32px*/
+  --fs-h2: 2rem; /*32px*/
+  --fs-h3: 1.5rem; /*24px*/
+  --fs-h4: 1rem; /*16px*/
+
+  --fs-link: 2rem; /*32px*/
+  --fs-caption: 2rem; /*32px*/
+  --fs-paragraph: 1rem; /*16px*/
+
+  --lh-h1: 64; /* 64-line-height*/
+  --lh-h1-mobile: 48; /* 48-line-height*/
+  --lh-h2: 40; /* 40-line-height*/
+  --lh-h3: 30; /* 30-line-height*/
+  --lh-h4: 30; /* 30-line-height*/
+
+  --lh-paragraph: 30; /* 30-line-height */
+  --lh-caption: 40; /* 40-line-height */
+  --lh-link: 40; /* 40-line-height */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
