@@ -12,7 +12,9 @@
   --color-dark-text-heading: hsla(240, 30%, 19%, 0.9);
   --color-dark-text-paragraph: var(--dark-blue);
   --color-link: hsl(232, 75%, 62%);
+  --color-btn-hover: hsla(232, 75%, 62%, 0.5);
   --color-link-hover: hsl(232, 51%, 53%);
+  --color-input-text: hsl(240, 28, 58);
 
   --fs-h1: 3.125rem; /*50px*/
   --fs-h1-mobile: 2rem; /*32px*/
@@ -24,15 +26,17 @@
   --fs-caption: 2rem; /*32px*/
   --fs-paragraph: 1rem; /*16px*/
 
-  --lh-h1: 64; /* 64-line-height*/
-  --lh-h1-mobile: 48; /* 48-line-height*/
-  --lh-h2: 40; /* 40-line-height*/
-  --lh-h3: 30; /* 30-line-height*/
-  --lh-h4: 30; /* 30-line-height*/
+  --ff-body: "Lexend Deca", sans-serif;
 
-  --lh-paragraph: 30; /* 30-line-height */
-  --lh-caption: 40; /* 40-line-height */
-  --lh-link: 40; /* 40-line-height */
+  --lh-h1: 2; /* 64-line-height*/
+  --lh-h1-mobile: 1.5; /* 48px-line-height*/
+  --lh-h2: 2.5; /* 40-line-height*/
+  --lh-h3: 1.85; /* 30-line-height*/
+  --lh-h4: 1.85; /* 30-line-height*/
+
+  --lh-paragraph: 1.85; /* 30-line-height */
+  --lh-caption: 2.5; /* 40-line-height */
+  --lh-link: 2.5; /* 40-line-height */
 }
 
 * {
@@ -51,6 +55,100 @@ img {
 }
 
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--ff-body);
   background-color: var(--off-white);
+  overflow: hidden;
+}
+
+input {
+  font-family: var(--ff-body);
+}
+
+/* Header Section */
+header {
+  padding: 2rem 9%;
+  background-image: url(../img/Hero.jpg);
+  background-size: cover;
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .navmenu {
+  display: none;
+  position: absolute;
+  right: -900px;
+}
+
+header .hero {
+  margin-top: 11rem;
+}
+
+header .hero h1 {
+  font-size: var(--fs-h1-mobile);
+  color: var(--color-light-text);
+  font-weight: 700;
+  line-height: var(--lh-h1-mobile);
+}
+
+header .hero p {
+  color: var(--color-light-text);
+  font-size: var(--fs-paragraph);
+  line-height: var(--lh-paragraph);
+  margin: 2rem 0 2.5rem;
+}
+
+header .cta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header .cta .cta__input {
+  /* border: 1px solid #fff; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+header .cta .cta__input input {
+  padding: 0.8rem 1rem;
+  /* border-radius: 0.2rem; */
+  font-size: 1rem;
+  width: 100%;
+}
+
+header .cta .cta__input input:focus {
+  outline: 2px solid var(--color-input-text);
+}
+
+header .cta .cta__input input::placeholder {
+  color: var(--color-input-text);
+}
+
+header .cta .cta__input i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+
+header .cta .cta__btn {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-link);
+  color: var(--color-light-text);
+  font-size: 1.2rem;
+  font-family: var(--ff-body);
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
