@@ -14,7 +14,7 @@
   --color-link: hsl(232, 75%, 62%);
   --color-btn-hover: hsla(232, 75%, 62%, 0.5);
   --color-link-hover: hsl(232, 51%, 53%);
-  --color-input-text: hsl(240, 28, 58);
+  --color-input-text: hsl(240, 28%, 58%);
 
   --fs-h1: 3.125rem; /*50px*/
   --fs-h1-mobile: 2rem; /*32px*/
@@ -57,7 +57,7 @@ img {
 body {
   font-family: var(--ff-body);
   background-color: var(--off-white);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 input {
@@ -71,7 +71,7 @@ header {
   background-size: cover;
   background-position: 75% 50%;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 }
@@ -151,4 +151,11 @@ header .cta .cta__btn {
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
+}
+
+/* MOCKUP SECTION */
+
+.mockup {
+  padding: 2rem 9%;
+  height: 20rem;
 }
